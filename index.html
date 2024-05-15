@@ -10,7 +10,7 @@
 
             function Header({title}){
                 console.log(title);
-                return <h1>{title}</h1>
+                return <h1>{title ? title : "Default title"}</h1>
             }
 
             function HomePage(){
@@ -30,7 +30,8 @@
                     <button onClick={handleClick}>Likes ({likes})</button>
                 </div>
                 );
-                }
+                
+            }
 
            
             const root = ReactDOM.createRoot(app);
